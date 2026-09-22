@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "couchbase"
+    metrics_path: /metrics
+    scheme: http
+    fallback_scrape_protocol: PrometheusText0.0.4
+    basic_auth:
+      username: Administrator
+      password: password123
+    static_configs:
+      - targets: ["couchbase:8091"]
