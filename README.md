@@ -11,6 +11,8 @@ ships a native Prometheus `/metrics` endpoint. Built for a customer-facing
 | --- | --- |
 | [`couchbase-prometheus-grafana-demo.md`](./couchbase-prometheus-grafana-demo.md) | The original spec — the step-by-step build instructions this demo was created from |
 | [`cb-prom-grafana-demo/`](./cb-prom-grafana-demo) | The working demo: docker-compose stack, Prometheus config, two Grafana dashboards, and a Python KV load generator |
+| [`cb-prom-grafana-demo/README.md`](./cb-prom-grafana-demo/README.md) | Self-install guide for **this Docker demo**: bring-up commands, cluster init, sample data, running the load generator, verification, teardown |
+| [`docs/avis-it-prometheus-grafana-installation-guide.md`](./docs/avis-it-prometheus-grafana-installation-guide.md) | Self-install guide for **a real production cluster**: least-privilege monitoring user, TLS, Prometheus/Grafana install, scrape config, dashboard import, security checklist |
 
 ## Quick start
 
@@ -37,8 +39,8 @@ scrape-protocol quirk, a Python SDK `timedelta` fix).
 
 The demo is Docker-only and not meant to be deployed as-is. For wiring the
 same Prometheus + Grafana approach onto an existing, already-running
-Couchbase cluster, see the companion installation guide referenced in
-[`cb-prom-grafana-demo/README.md`](./cb-prom-grafana-demo/README.md#production-version-of-this-guide).
+Couchbase cluster, see
+[`docs/avis-it-prometheus-grafana-installation-guide.md`](./docs/avis-it-prometheus-grafana-installation-guide.md).
 
 ## Demo credentials
 

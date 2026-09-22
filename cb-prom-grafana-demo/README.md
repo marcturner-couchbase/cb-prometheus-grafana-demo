@@ -160,5 +160,4 @@ docker compose down -v
 
 For rolling this same monitoring approach onto Avis's real, already-running
 Couchbase cluster (not this Docker demo), see the companion installation
-guide: *Couchbase Monitoring with Prometheus & Grafana — Avis IT
-Installation Guide*.
+guide: [`../docs/avis-it-prometheus-grafana-installation-guide.md`](../docs/avis-it-prometheus-grafana-installation-guide.md).
